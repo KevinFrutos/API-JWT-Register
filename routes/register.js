@@ -34,6 +34,8 @@ router.post('/register',
 
         const register = new Register({
             user: req.body.user,
+            name: req.body.name,
+            last_name: req.body.last_name,
             email: req.body.email,
             passwd: password,
             refresh_token: refresh_token_encrypt,
